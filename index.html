@@ -1601,7 +1601,7 @@ function doOptions(e) {
         }
 
         function sendDataToGoogleSheets(eventType = "Progress Update") {
-            const url = (window.ADJECTIVE_QUEST_SHEETS_URL || localStorage.getItem('adjectiveQuestTeacherURL') || '').trim();
+            const url = "https://script.google.com/macros/s/AKfycbyAmujqWB7bpAlD-dV2X6wHCHDO7ept_pgjiSleIyAQz9Curh1iiwLDbyFSqAx4A1Vq/exec";
             if (!url) return;
 
             const boardProgress = state.progress.board || {};
